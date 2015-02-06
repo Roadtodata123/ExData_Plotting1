@@ -112,3 +112,7 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+Plot4 use 500 x 500 pixel to prevent truncation of legend text.
+The assignment note says 480 x 480 but the example is 504 x 504.
+With 480 x 480 , there is a slight truncation on the right hand side of the legend text.
+
