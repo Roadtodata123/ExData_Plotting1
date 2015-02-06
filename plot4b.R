@@ -9,11 +9,6 @@
 ##
 ## The second part is to plot the graphs
 ##
-## The assignment note says to use 480 x 480 pixels but the example is 504 x 504.
-## With 480 x 480 , there is a slight truncation on the right hand side of the legend text
-##  when copying to png file.
-## Thus I also produced Plot4b which used 500 x 500 pixel to prevent truncation of legend text.
-##
 
 
 ## readd the data
@@ -60,6 +55,6 @@ legend("topright",lty=1,col=c("black","red","blue"), legend=names(mysubdata[,7:9
 #graph4
 with(mysubdata,plot(DateTime,Global_reactive_power,type="l",xlab="datetime"))
 
-dev.copy(png,file = "plot4.png",units = "px",width=480,height=480)
+dev.copy(png,file = "plot4.png",units = "px",width=500,height=500)
 dev.off()
 
